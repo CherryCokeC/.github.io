@@ -1,0 +1,12 @@
+function addGlitchEffect() {
+  const container = document.querySelector('.container');
+  container.classList.add('glitch');
+  
+  setTimeout(function() {
+    container.classList.remove('glitch');
+  }, 3000);
+}
+
+document.addEventListener('click', function() {
+  addGlitchEffect();
+});
